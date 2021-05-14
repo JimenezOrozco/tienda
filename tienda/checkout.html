@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Pedidos</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Artesanias de Morelos!!" name="keywords">
+        <meta content="Artesanias de Morelos!!" name="description">
+
+        <link href="img/favicon.ico" rel="icon">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row">
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">Menú</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.html" class="nav-item nav-link ">Home</a>
+                            <a href="quienes_somos.html" class="nav-item nav-link ">¿Quiénes Somos?</a>
+                            <a href="product-list.html" class="nav-item nav-link">Productos</a>
+                            <a href="carrito.html" class="nav-item nav-link">Carrito</a>
+                            <a href="checkout.html" class="nav-item nav-link active">Pedidos</a>
+                            <a href="my-account.html" class="nav-item nav-link">Mi Cuenta</a>
+                            <a href="wishlist.html" class="nav-item nav-link">Wishlist</a>
+                            <a href="contact.html" class="nav-item nav-link">Contáctanos</a>
+                            
+                        </div>
+                        </div>
+                        <div class="navbar-nav ml-auto">
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Entrar</a>
+                                <div class="dropdown-menu">
+                                    <a href="login.html" class="dropdown-item">Login</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="search">
+                            <input type="text" placeholder="Search">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="user">
+                            <a href="wishlist.html" class="btn wishlist">
+                                <i class="fa fa-heart"></i>
+                                <span>(0)</span>
+                            </a>
+                            <a href="carrito.html" class="btn cart">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span>(0)</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkout">
+            <div class="container-fluid"> 
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="checkout-inner">
+                            <div class="billing-address">
+                                <h2>Dirección de Envío</h2>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Nombre</label>
+                                        <input class="form-control" type="text" placeholder="Nombre">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Apellido</label>
+                                        <input class="form-control" type="text" placeholder="Apellido">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>E-mail</label>
+                                        <input class="form-control" type="text" placeholder="E-mail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Num Celular</label>
+                                        <input class="form-control" type="text" placeholder="Num Celular">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label>Dirección</label>
+                                        <input class="form-control" type="text" placeholder="Dirección">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>País</label>
+                                        <select class="custom-select">
+                                            <option selected>México</option>
+                                            <option>Estados Unidos</option>
+                                            <option>Colombia</option>
+                                            <option>Argentina</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Ciudad</label>
+                                        <input class="form-control" type="text" placeholder="Ciudad">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Estado</label>
+                                        <input class="form-control" type="text" placeholder="Estado">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Código Postal</label>
+                                        <input class="form-control" type="text" placeholder="Código Postal">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="newaccount">
+                                            <label class="custom-control-label" for="newaccount">Crear Cuenta</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="checkout-inner">
+                            <div class="checkout-summary">
+                                <h1>Carrito</h1>
+                                <p>Nombre del Producto<span>$99</span></p>
+                                <p class="sub-total">Sub Total<span>$99</span></p>
+                                <p class="ship-cost">Costo de envío<span>$1</span></p>
+                                <h2>Total<span>$100</span></h2>
+                            </div>
+
+                            <div class="checkout-payment">
+                                <div class="payment-methods">
+                                    <h1>Metodos de Pago</h1>
+                                    <div class="payment-method">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="payment-1" name="payment">
+                                            <label class="custom-control-label" for="payment-1">Paypal</label>
+                                        </div>
+                                        <div class="payment-content" id="payment-1-show">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt orci ac eros volutpat maximus lacinia quis diam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="payment-method">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="payment-3" name="payment">
+                                            <label class="custom-control-label" for="payment-3">Paypal</label>
+                                        </div>
+                                        <div class="payment-content" id="payment-3-show">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt orci ac eros volutpat maximus lacinia quis diam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="payment-method">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="payment-4" name="payment">
+                                            <label class="custom-control-label" for="payment-4">Tranferencia</label>
+                                        </div>
+                                        <div class="payment-content" id="payment-4-show">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt orci ac eros volutpat maximus lacinia quis diam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="payment-method">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="payment-5" name="payment">
+                                            <label class="custom-control-label" for="payment-5">Tarjeta Débito/Crédito</label>
+                                        </div>
+                                        <div class="payment-content" id="payment-5-show">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt orci ac eros volutpat maximus lacinia quis diam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkout-btn">
+                                    <button>Realizar Pedido</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Nuestro Contacto</h2>
+                            <div class="contact-info">
+                                <p><i class="fa fa-map-marker"></i>Cuautla, Morelos, México</p>
+                                <p><i class="fa fa-envelope"></i>artesanias@artesanias.com</p>
+                                <p><i class="fa fa-phone"></i>123-456-7845</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Síganos</h2>
+                            <div class="contact-info">
+                                <div class="social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Información</h2>
+                            <ul>
+                                <li><a href="#">¿Quienés somos?</a></li>
+                                <li><a href="#">Términos y Condiciones</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Información de Pago</h2>
+                            <ul>
+                                <li><a href="#">Politica de Pago</a></li>
+                                <li><a href="#">Reembolsos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row payment align-items-center">
+                    <div class="col-md-6">
+                        <div class="payment-method">
+                            <h2>Aceptamos:</h2>
+                            <img src="img/payment-method.png" alt="Payment Method" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+        
+        <script src="js/main.js"></script>
+    </body>
+</html>
